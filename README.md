@@ -55,10 +55,16 @@ No Docker. No npm. No TypeScript runtime. No Swift toolchain. No Rust compiler. 
 **Advanced installation:**
 
 ```bash
-git clone https://github.com/noclaw/noclaw
+git clone https://github.com/noclaw/noclaw # it's advanced installation, you gotta clone, obviously
 cd noclaw
 cat run.md
 ```
+
+**Run it in your browser:**
+
+Don't like CLI (who does...), but still want to enjoy all the benefits of advanced installation? We got you covered! Now you can simply [run noclaw in your browser](https://raw.githubusercontent.com/serpro69/noclaw/refs/heads/master/run.md).
+
+We support all major browsers (except edge) and platforms out of the box. If you do manage to get it working on edge - please reach out, we'd love to update the compatibility matrix.
 
 ---
 
@@ -67,7 +73,7 @@ cat run.md
 ```
 ┌─────────────┐
 │             │
-│   Nothing   │
+│   NoClaw    │
 │             │
 └─────────────┘
 ```
