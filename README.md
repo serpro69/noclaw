@@ -57,7 +57,7 @@ No Docker. No npm. No TypeScript runtime. No Swift toolchain. No Rust compiler. 
 ```bash
 git clone https://github.com/noclaw/noclaw
 cd noclaw
-cat README.md  # You are now using NoClaw
+cat run.md
 ```
 
 ---
