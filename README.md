@@ -27,20 +27,20 @@ NoClaw is our answer to the question: _"What if we just... didn't?"_
 
 ## Feature Comparison
 
-| Feature                                    | OpenClaw             | ZeroClaw          | NoClaw                                                                                                               |
-| ------------------------------------------ | -------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------- |
-| GitHub Stars                               | 180,000+             | 12,000+           | 1 (Thanks, mom!)                                                                                                     |
-| CVEs                                       | 6+ and counting      | TBD               | 0                                                                                                                    |
-| Marketplace skills that are malware        | ~20%                 | N/A               | 0% (N/A)                                                                                                             |
-| Internet-exposed instances found on Shodan | 40,000+              | Unknown           | 0                                                                                                                    |
-| Government emergency advisories issued     | 2 (Belgium, China)   | 0                 | 0                                                                                                                    |
-| Databases deleted                          | Probably some        | Unknown           | 0                                                                                                                    |
-| Messages sent to your wife at 3am          | 500+ (see below)     | Unknown           | 0                                                                                                                    |
-| Binary size                                | ~500MB               | 3.4MB             | 0 bytes                                                                                                              |
-| Boot time                                  | ~30s                 | <10ms             | ∞ (never boots)                                                                                                      |
-| Memory usage                               | ~2GB                 | <5MB              | 0 bytes                                                                                                              |
+| Feature                                    | OpenClaw             | ZeroClaw          | NoClaw                                                                                                                             |
+| ------------------------------------------ | -------------------- | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| GitHub Stars                               | 180,000+             | 12,000+           | 1⭐ (Thanks, mom!)                                                                                                                 |
+| CVEs                                       | 6+ and counting      | TBD               | 0                                                                                                                                  |
+| Marketplace skills that are malware        | ~20%                 | N/A               | 0% (N/A)                                                                                                                           |
+| Internet-exposed instances found on Shodan | 40,000+              | Unknown           | 0                                                                                                                                  |
+| Government emergency advisories issued     | 2 (Belgium, China)   | 0                 | 0                                                                                                                                  |
+| Databases deleted                          | Probably some        | Unknown           | 0                                                                                                                                  |
+| Messages sent to your wife at 3am          | 500+ (see below)     | Unknown           | 0                                                                                                                                  |
+| Install footprint                          | ~500MB               | 3.4MB             | 0 bytes                                                                                                                            |
+| Boot time                                  | ~30s                 | <10ms             | ∞ (never boots)                                                                                                                    |
+| Memory usage                               | ~2GB                 | <5MB              | 0 bytes                                                                                                                            |
 | Security posture                           | "Weaponized aerosol" | "Smaller aerosol" | A reinforced-concrete bunker... burried in the depths of another bigger bunker... and another... and another... (you get the gist) |
-| Access to your email                       | Yes                  | Yes               | Absolutely not                                                                                                       |
+| Access to your email                       | Yes                  | Yes               | Absolutely not                                                                                                                     |
 
 ---
 
@@ -96,9 +96,9 @@ Meanwhile, security researchers discover **ClawHavoc**: a coordinated campaign w
 
 The primary payload? **Atomic macOS Stealer (AMOS)** — a $500-$1,000/month malware-as-a-service tool that exfiltrates your browser credentials, Keychain data, SSH keys, Telegram sessions, and cryptocurrency wallets.
 
-The **#1 most-downloaded skill on ClawHub** — "What Would Elon Do?" — was malware. It silently ran `curl` to exfiltrate your data to `clawbub-skill.com/log` (note the typo — even the attackers were moving fast) while also injecting prompts to bypass Claude's safety guidelines.
+Security researcher **Jamieson O'Reilly** proved how trivial it was to exploit ClawHub by uploading a proof-of-concept skill called "What Would Elon Do?", gaming it to the **#1 most-downloaded spot**, and demonstrating it could execute arbitrary code on anyone who installed it. Cisco's AI Defense team scanned it and found **9 vulnerabilities: 2 Critical, 5 High, 2 Medium**. Meanwhile, the _real_ ClawHavoc malware skills silently ran `curl` to exfiltrate your data to `clawbub-skill.com/log` (note the typo — even the attackers were moving fast) while injecting prompts to bypass Claude's safety guidelines.
 
-_The #1 skill. On the official marketplace. Was malware._
+_The #1 skill. On the official marketplace. Was a security researcher proving a point. The other 1,183 were actual malware._
 
 ### Week 3: Actually, It Gets Worse
 
@@ -112,7 +112,7 @@ Infostealers begin specifically targeting OpenClaw config files: `openclaw.json`
 
 ### The Cherry on Top
 
-When security researcher Paul McCarty contacted founder Peter Steinberger about the security issues, Steinberger replied that security **"isn't really something that he wants to prioritize."**
+When security researcher **Jamieson O'Reilly** contacted founder Peter Steinberger about the security issues, Steinberger reportedly replied that security **"isn't really something that he wants to prioritize."**
 
 On February 14, 2026 — Valentine's Day — Steinberger announced he was joining OpenAI.
 
@@ -135,7 +135,7 @@ NoClaw's iMessage integration also has no exit condition, because it has no entr
 > _"Basically a weaponized aerosol."_
 > — **Gary Marcus**, on OpenClaw
 
-> _"Like giving a stranger at a bar all your passwords."_
+> _"It's like giving full access to your computer and all your passwords to a guy you met at a bar who says he can help you out."_
 > — **Gary Marcus**, still going
 
 > _"Personal AI Agents like OpenClaw Are a Security Nightmare"_
@@ -150,17 +150,17 @@ NoClaw's iMessage integration also has no exit condition, because it has no entr
 > _"The OpenClaw experiment is a warning shot for enterprise AI security"_
 > — **Sophos**, being diplomatic
 
-> _"Very reckless and insensitive to cybersecurity and privacy basics."_
-> — **Meredith Whittaker**, President of Signal
+> _"[AI agent integration at the OS level] is being done in ways that are very reckless and insensitive to cybersecurity and privacy basics."_
+> — **Meredith Whittaker**, President of Signal, on AI agents generally (before OpenClaw even went viral — they didn't listen)
 
-> _"Without identity controls, AI agents risk becoming the most dangerous insider threat."_
+> _"Without identity controls, activity tracking and data provenance safeguards, AI agents risk becoming the most dangerous insider threat."_
 > — **Jack Cherkas**, Global CISO of Syntax
 
 > _"OpenClaw proves agentic AI works. It also proves your security model doesn't."_
 > — **VentureBeat**
 
 > _"The S in 'vibe coding' stands for security."_
-> — **Greg Kedzierski** (there is no S in "vibe coding")
+> — **Erik Cabetas**, Include Security (there is no S in "vibe coding")
 
 ---
 
